@@ -1,0 +1,15 @@
+.wrap{
+    display: flex;
+
+}
+.users-box{
+    width: fit-content;
+    border: 2px solid crimson;
+    padding: 10px;
+}
+.single-box{
+    width: fit-content;
+    border: 2px solid blueviolet;
+    padding: 10px;
+    background: darkgrey;
+}
