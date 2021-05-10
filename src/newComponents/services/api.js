@@ -8,11 +8,11 @@ const getUsers=()=>{
     return axiosInstance.get('/users');
 }
 const getUser=(id)=>{
-    return axiosInstance.get('/users'+id);
+    return axiosInstance.get('/user'+id);
 }
 const getPosts=()=>{
-    return axiosInstance.get('/posts');
-}
+    return axiosInstance.get('/posts')};
+
 export {
     getUsers,getUser,getPosts,axiosInstance
 }

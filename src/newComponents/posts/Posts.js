@@ -3,27 +3,19 @@ import {getPosts} from "../services/api";
 import Post from "./post/Post";
 
 export default function Posts() {
-    let[posts,setPosts]=useState({});
-    let[user,setUser]=useState([])
+    let[posts,setPosts]=useState([]);
 
 
     useEffect(()=>{
-        getPosts().then(value => setPosts([...value]))
+        getPosts().then(value => setPosts([...value.data]))
     },[]);
-const postSearch=(id)=>{
-    let postFind=user.find(value => value.id === id);
-    console.log(postFind);
-    setUser(postFind)
-    }
+
     return (
         <div>
 
             <div>
-                {posts.map((value)=> < Post
-                    key={value.id}
-                    food={value}
-                    postSearch={postSearch}
-                    />)
+                {posts.map((value)=> < Post key={value.id} item={value}
+                />)
                 }
 
             </div>
