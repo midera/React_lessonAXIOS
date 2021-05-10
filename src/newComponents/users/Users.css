@@ -1,11 +1,12 @@
 .wrap{
     display: flex;
-
+background: cornsilk;
 }
 .users-box{
     width: fit-content;
     border: 2px solid crimson;
     padding: 10px;
+    background: darkviolet;
 }
 .single-box{
     width: fit-content;
