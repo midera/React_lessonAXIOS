@@ -1,6 +1,7 @@
 import './App.css';
 import Users from "./newComponents/users/Users";
 import React from "react";
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -23,6 +24,7 @@ function App() {
                 <Route path={'/posts'} render={()=>(<Posts/>)}>
 
                 </Route>
+
             </Switch>
         </Router>
     </div>
